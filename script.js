@@ -74,7 +74,7 @@ resumeBtns.forEach((btn, idx) => {
     });
 });
 
-//portfolio-part 
+//project-part 
 
 const arrowRight = document.querySelector('.project-box .navigation .arrow-right');
 const arrowLeft = document.querySelector('.project-box .navigation .arrow-left');
@@ -118,5 +118,7 @@ arrowLeft.addEventListener('click', () => {
 
     activeproject();
 }); 
+
+activeproject();
 
 
