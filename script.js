@@ -76,21 +76,21 @@ resumeBtns.forEach((btn, idx) => {
 
 //portfolio-part 
 
-const arrowRight = document.querySelector('.portfolio-box .navigation .arrow-right');
-const arrowLeft = document.querySelector('.portfolio-box .navigation .arrow-left');
+const arrowRight = document.querySelector('.project-box .navigation .arrow-right');
+const arrowLeft = document.querySelector('.project-box .navigation .arrow-left');
 
 let index = 0;
-const activePorrtfolio = () => {
-    const imgSlide = document.querySelector('.portfolio-carousel .img-slide');
+const activeproject = () => {
+    const imgSlide = document.querySelector('.project-carousel .img-slide');
 
-    const portfolioDetails = document.querySelectorAll('.portfolio-detail')
+    const projectDetails = document.querySelectorAll('.project-detail')
 
     imgSlide.style.transform = `translateX(calc(${index * -100}% - ${index * 2}rem))`;
 
-    portfolioDetails.forEach(detail => {
+    projectDetails.forEach(detail => {
         detail.classList.remove('active');
     });
-    portfolioDetails[index].classList.add('active')
+    projectDetails[index].classList.add('active')
 }
 
 arrowRight.addEventListener('click', () => {
@@ -103,7 +103,7 @@ arrowRight.addEventListener('click', () => {
          arrowRight.classList.add('disabled');
     }
 
-    activePorrtfolio();
+    activeproject();
 }); 
 
 arrowLeft.addEventListener('click', () => {
@@ -116,7 +116,7 @@ arrowLeft.addEventListener('click', () => {
         arrowLeft.classList.add('disabled');
     }
 
-    activePorrtfolio();
+    activeproject();
 }); 
 
 
